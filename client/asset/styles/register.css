@@ -1,0 +1,453 @@
+body {
+  padding: 0%;
+  margin: 0%;
+  height: 100%;
+}
+.silaba1 {
+  color: rgba(32, 243, 102, 0.863);
+  margin-left: 5%;
+}
+.silaba2 {
+  color: rgb(106, 218, 247);
+}
+header span {
+  font-family: "Poppins", sans-serif;
+  font-size: 140%;
+  font-weight: 900;
+}
+header {
+  background-color: aliceblue;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+main {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+label {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+}
+.primer-div,
+.segundo-div {
+  height: 70%;
+  width: 50%;
+  background-color: aliceblue;
+  border: 1px solid black;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  border-radius: 10px;
+}
+.primer-div button {
+  margin-top: 10%;
+  text-align: center;
+  width: 30%;
+  align-self: flex-end;
+  font-size: 110%;
+  border-radius: 10px;
+  border: 0cap;
+  background-color: rgba(32, 243, 102, 0.863);
+  color: black;
+  padding: 2%;
+}
+.segundo-div {
+  display: none;
+}
+.primer-div label {
+  margin-top: 5%;
+  font-size: 110%;
+  font-family: "Poppis", sans-serif;
+  position: relative;
+  left: 5%;
+}
+.primer-div input {
+  width: 90%;
+  font-size: 110%;
+  height: 110%;
+}
+.primer-div {
+  /* display: none; */
+}
+.segundo-div select {
+  position: relative;
+  left: 5%;
+
+  margin-top: 5%;
+  width: 90%;
+  padding: 1%;
+  font-size: 125%;
+}
+.segundo-div input {
+  width: 88%;
+  font-size: 110%;
+}
+.segundo-div label {
+  position: relative;
+  left: 5%;
+  font-size: 110%;
+  font-family: "Poppins", sans-serif;
+  margin-top: 5%;
+}
+.segundo-div button {
+  margin-top: 5%;
+
+  padding: 2%;
+  position: relative;
+  left: 70%;
+  font-size: 1.1rem;
+  border: 0;
+  border-radius: 10px;
+  background-color: rgba(32, 243, 102, 0.863);
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: aliceblue;
+}
+
+@media (max-width: 575px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  .primer-div,
+  .segundo-div {
+    height: 60%;
+    width: 80%;
+    background-color: aliceblue;
+    border: 1px solid black;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    border-radius: 10px;
+  }
+  .primer-div button {
+    margin-top: 4%;
+    text-align: center;
+    width: 30%;
+    align-self: flex-end;
+    font-size: 110%;
+    border-radius: 10px;
+    border: 0cap;
+    background-color: rgba(32, 243, 102, 0.863);
+    color: black;
+    padding: 2%;
+  }
+  .segundo-div {
+    display: none;
+  }
+  .primer-div label {
+    margin-top: 3%;
+    font-size: 110%;
+    font-family: "Poppis", sans-serif;
+    position: relative;
+    left: 5%;
+  }
+  .primer-div input {
+    width: 90%;
+    font-size: 110%;
+    height: 110%;
+  }
+  .primer-div {
+    /* display: none; */
+  }
+  .segundo-div select {
+    display: flex;
+    margin-top: 5%;
+    width: 90%;
+    align-self: center;
+    padding: 1%;
+    font-size: 125%;
+  }
+  .segundo-div input {
+    width: 88%;
+    font-size: 110%;
+  }
+  .segundo-div label {
+    position: relative;
+    left: 5%;
+    font-size: 110%;
+    font-family: "Poppins", sans-serif;
+    margin-top: 5%;
+  }
+  .segundo-div button {
+    margin-top: 5%;
+    display: flex;
+    align-self: flex-end;
+    padding: 2%;
+    position: relative;
+    right: 10%;
+    font-size: 1.1rem;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(32, 243, 102, 0.863);
+  }
+  footer {
+    flex-direction: column;
+  }
+}
+@media (min-width: 575px) and (max-width: 767px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  .primer-div,
+  .segundo-div {
+    height: 60%;
+    width: 80%;
+    background-color: aliceblue;
+    border: 1px solid black;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    border-radius: 10px;
+  }
+  .primer-div button {
+    margin-top: 4%;
+    text-align: center;
+    width: 30%;
+    align-self: flex-end;
+    font-size: 110%;
+    border-radius: 10px;
+    border: 0cap;
+    background-color: rgba(32, 243, 102, 0.863);
+    color: black;
+    padding: 2%;
+  }
+  .segundo-div {
+    display: none;
+  }
+  .primer-div label {
+    margin-top: 3%;
+    font-size: 110%;
+    font-family: "Poppis", sans-serif;
+    position: relative;
+    left: 5%;
+  }
+  .primer-div input {
+    width: 90%;
+    font-size: 110%;
+    height: 110%;
+  }
+  .primer-div {
+    /* display: none; */
+  }
+  .segundo-div select {
+    display: flex;
+    margin-top: 5%;
+    width: 90%;
+    align-self: center;
+    padding: 1%;
+    font-size: 125%;
+  }
+  .segundo-div input {
+    width: 88%;
+    font-size: 110%;
+  }
+  .segundo-div label {
+    position: relative;
+    left: 5%;
+    font-size: 110%;
+    font-family: "Poppins", sans-serif;
+    margin-top: 5%;
+  }
+  .segundo-div button {
+    margin-top: 5%;
+    display: flex;
+    align-self: flex-end;
+    padding: 2%;
+    position: relative;
+    right: 10%;
+    font-size: 1.1rem;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(32, 243, 102, 0.863);
+  }
+  footer {
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  .primer-div,
+  .segundo-div {
+    height: 60%;
+    width: 80%;
+    background-color: aliceblue;
+    border: 1px solid black;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    border-radius: 10px;
+  }
+  .primer-div button {
+    margin-top: 4%;
+    text-align: center;
+    width: 30%;
+    align-self: flex-end;
+    font-size: 110%;
+    border-radius: 10px;
+    border: 0cap;
+    background-color: rgba(32, 243, 102, 0.863);
+    color: black;
+    padding: 2%;
+  }
+  .segundo-div {
+    display: none;
+  }
+  .primer-div label {
+    margin-top: 3%;
+    font-size: 120%;
+    font-family: "Poppis", sans-serif;
+    position: relative;
+    left: 5%;
+  }
+  .primer-div input {
+    width: 90%;
+    font-size: 120%;
+    height: 120%;
+  }
+  .primer-div {
+    /* display: none; */
+  }
+  .segundo-div select {
+    display: flex;
+    margin-top: 5%;
+    width: 90%;
+    align-self: center;
+    padding: 1%;
+    font-size: 135%;
+  }
+  .segundo-div input {
+    width: 88%;
+    font-size: 120%;
+  }
+  .segundo-div label {
+    position: relative;
+    left: 5%;
+    font-size: 120%;
+    font-family: "Poppins", sans-serif;
+    margin-top: 5%;
+  }
+  .segundo-div button {
+    margin-top: 5%;
+    display: flex;
+    align-self: flex-end;
+    padding: 2%;
+    position: relative;
+    right: 10%;
+    font-size: 120%;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(32, 243, 102, 0.863);
+  }
+  footer {
+    flex-direction: column;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  .primer-div,
+  .segundo-div {
+    height: 60%;
+    width: 80%;
+    background-color: aliceblue;
+    border: 1px solid black;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    border-radius: 10px;
+  }
+  .primer-div button {
+    margin-top: 4%;
+    text-align: center;
+    width: 30%;
+    align-self: flex-end;
+    font-size: 170%;
+    border-radius: 10px;
+    border: 0cap;
+    background-color: rgba(32, 243, 102, 0.863);
+    color: black;
+    padding: 2%;
+  }
+  .segundo-div {
+    display: none;
+  }
+  .primer-div label {
+    margin-top: 3%;
+    font-size: 150%;
+    font-family: "Poppis", sans-serif;
+    position: relative;
+    left: 5%;
+  }
+  .primer-div input {
+    width: 90%;
+    font-size: 130%;
+    height: 120%;
+  }
+  .primer-div {
+    /* display: none; */
+  }
+  .segundo-div select {
+    display: flex;
+    margin-top: 5%;
+    width: 90%;
+    align-self: center;
+    padding: 1%;
+    font-size: 145%;
+  }
+  .segundo-div input {
+    width: 88%;
+    font-size: 150%;
+  }
+  .segundo-div label {
+    position: relative;
+    left: 5%;
+    font-size: 160%;
+    font-family: "Poppins", sans-serif;
+    margin-top: 5%;
+  }
+  .segundo-div button {
+    margin-top: 5%;
+    display: flex;
+    align-self: flex-end;
+    padding: 2%;
+    position: relative;
+    right: 10%;
+    font-size: 170%;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(32, 243, 102, 0.863);
+  }
+  footer {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,623 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 0% 2%;
+  background-color: aliceblue;
+  position: fixed;
+  top: 0;
+  width: 96%;
+  z-index: 1;
+}
+.imagenes {
+  display: flex;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0%;
+}
+.imagenes button {
+  background-color: aliceblue;
+  border: none;
+  font-size: 112%;
+}
+.imagenes h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 200%;
+  font-weight: 900;
+  letter-spacing: 3px;
+  font-style: normal;
+}
+.imagenes img {
+  height: 6%;
+  width: 6%;
+}
+h1 .silaba1 {
+  color: rgba(32, 243, 102, 0.863);
+}
+h1 .silaba2 {
+  color: rgb(106, 218, 247);
+}
+nav {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+nav ul li {
+  list-style: none;
+  margin: 0% 2%;
+  width: 200px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 120%;
+  justify-content: center;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgba(24, 180, 76, 0.863);
+}
+#separador {
+  display: none;
+}
+nav button {
+  display: none;
+}
+.abrirMenu {
+  display: block;
+  display: flex;
+  flex-direction: row;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+}
+.lateral {
+  width: 50vh;
+  overflow-y: scroll;
+  height: 70vh;
+}
+.lateral button {
+  display: none;
+}
+.titulo {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -10px -10px 50px rgba(61, 128, 83, 0.863);
+  padding: 0% 5%;
+}
+.textos {
+  width: 50%;
+}
+.imagen {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.imagen img {
+  width: 50%;
+  height: 50%;
+  margin: 0% 10%;
+}
+.textos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.textos h2 {
+  font-size: 200%;
+  margin: 5% 0%;
+  font-weight: 900;
+  color: rgba(46, 207, 100, 0.863);
+}
+.textos p {
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-size: 120%;
+}
+.indices {
+  display: flex;
+  flex-direction: row;
+}
+.indices ul {
+  width: 90%;
+  position: relative;
+  left: 10%;
+}
+.indices ul li hr {
+  width: 70%;
+}
+.indices ul li {
+  list-style: none;
+  padding: 4%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.lista-link li a {
+  text-decoration: none;
+  color: rgba(46, 207, 100, 0.863);
+}
+.ideas {
+  display: flex;
+  height: 40%;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 2%;
+}
+.ideas h2 {
+  font-size: 200%;
+  margin: 2%;
+  color: rgba(46, 207, 100, 0.863);
+}
+.idea {
+  width: 80%;
+  margin: 1.5%;
+  padding: 4% 2%;
+  background-color: aliceblue;
+  border-radius: 50px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 20px;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: aliceblue;
+  padding: 2% 0%;
+}
+#login {
+  height: 100%;
+  width: 10%;
+}
+#login a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+#login button img {
+  height: 40%;
+  width: 40%;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+#menu-lateral {
+  display: none;
+}
+.abrirCarta {
+  display: none;
+}
+.cerrarCarta {
+  display: block;
+  position: fixed;
+  right: 65px;
+  background-color: aliceblue;
+  width: 200px;
+  height: 150px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+.cerrarCarta ul {
+  width: 90%;
+}
+.cerrarCarta ul li {
+  list-style: none;
+  margin-top: 5px;
+}
+.cerrarCarta ul li hr {
+  width: 100%;
+}
+@media (max-width: 575px) {
+  #menu-lateral {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+  #menu-lateral img {
+    height: 100%;
+    width: 100%;
+  }
+  main {
+    margin-top: 14%;
+  }
+  .titulo {
+    height: 60vh;
+  }
+  .titulo .textos h2 {
+    font-size: 150%;
+  }
+  .ideas {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .idea {
+    width: 85%;
+    height: 150px;
+  }
+  .titulo .textos {
+    width: 80%;
+  }
+  .titulo .textos p {
+    font-size: 90%;
+    width: 100%;
+  }
+  .titulo .textos p br {
+    display: none;
+  }
+  .lateral {
+    width: 0;
+    height: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    transition: 0.3s ease;
+  }
+  .abrirMenu {
+    transition: 0.5s;
+    display: block;
+  }
+  .cerrarMenu {
+    transition: 0.5s;
+    display: none;
+  }
+  .img-x {
+    height: 40px;
+    width: 40px;
+  }
+  #cerrar-menu {
+    display: flex;
+    position: relative;
+    left: 15px;
+    margin: 5%;
+    background-color: aliceblue;
+    border: none;
+  }
+  .lateralAbierto {
+    width: 390px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: aliceblue;
+    transition: 0.3s ease;
+    overflow-y: scroll;
+  }
+  .imagen {
+    display: none;
+  }
+  .imagenes .logo {
+    display: none;
+  }
+  .imagenes {
+    justify-content: space-around;
+    padding: 0%;
+  }
+  .imagenes h1 {
+    font-size: 120%;
+  }
+  .imagenes button {
+    font-size: 80%;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 90%;
+  }
+  nav ul li {
+    margin: 1% 0%;
+    width: 100%;
+  }
+  nav button {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    border: none;
+    font-weight: 700;
+    color: rgba(24, 180, 76, 0.863);
+    font-size: 120%;
+  }
+  #separador {
+    display: block;
+  }
+  .menuAbierto {
+    display: block;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer div {
+    margin: 3% 0%;
+  }
+}
+@media (min-width: 575px) and (max-width: 767px) {
+  #menu-lateral {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+  #menu-lateral img {
+    height: 100%;
+    width: 100%;
+  }
+  main {
+    margin-top: 14%;
+  }
+  .titulo {
+    height: 60vh;
+  }
+  .titulo .textos h2 {
+    font-size: 150%;
+  }
+  .ideas {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .idea {
+    width: 85%;
+    height: 150px;
+  }
+  .titulo .textos {
+    width: 80%;
+  }
+  .titulo .textos p {
+    font-size: 90%;
+    width: 100%;
+  }
+  .titulo .textos p br {
+    display: none;
+  }
+  .lateral {
+    width: 0;
+    height: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    transition: 0.3s ease;
+  }
+  .abrirMenu {
+    transition: 0.5s;
+    display: block;
+  }
+  .cerrarMenu {
+    transition: 0.5s;
+    display: none;
+  }
+  .img-x {
+    height: 40px;
+    width: 40px;
+  }
+  #cerrar-menu {
+    display: flex;
+    position: relative;
+    left: 15px;
+    margin: 5%;
+    background-color: aliceblue;
+    border: none;
+  }
+  .lateralAbierto {
+    width: 390px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: aliceblue;
+    transition: 0.3s ease;
+    overflow-y: scroll;
+  }
+  .imagen {
+    display: none;
+  }
+  .imagenes .logo {
+    display: none;
+  }
+  .imagenes {
+    justify-content: space-around;
+    padding: 0%;
+  }
+  .imagenes h1 {
+    font-size: 120%;
+  }
+  .imagenes button {
+    font-size: 80%;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 90%;
+  }
+  nav ul li {
+    margin: 1% 0%;
+    width: 100%;
+  }
+  nav button {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    border: none;
+    font-weight: 700;
+    color: rgba(24, 180, 76, 0.863);
+    font-size: 120%;
+  }
+  #separador {
+    display: block;
+  }
+  .menuAbierto {
+    display: block;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer div {
+    margin: 3% 0%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #menu-lateral {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+  #menu-lateral img {
+    height: 100%;
+    width: 100%;
+  }
+  main {
+    margin-top: 14%;
+  }
+  .titulo {
+    height: 60vh;
+  }
+  .titulo .textos h2 {
+    font-size: 150%;
+  }
+  .ideas {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .idea {
+    width: 85%;
+    height: 150px;
+  }
+  .titulo .textos {
+    width: 80%;
+  }
+  .titulo .textos p {
+    font-size: 90%;
+    width: 100%;
+  }
+  .titulo .textos p br {
+    display: none;
+  }
+  .lateral {
+    width: 0;
+    height: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    transition: 0.3s ease;
+  }
+  .abrirMenu {
+    transition: 0.5s;
+    display: block;
+  }
+  .cerrarMenu {
+    transition: 0.5s;
+    display: none;
+  }
+  .img-x {
+    height: 40px;
+    width: 40px;
+  }
+  #cerrar-menu {
+    display: flex;
+    position: relative;
+    left: 15px;
+    margin: 5%;
+    background-color: aliceblue;
+    border: none;
+  }
+  .lateralAbierto {
+    width: 390px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: aliceblue;
+    transition: 0.3s ease;
+    overflow-y: scroll;
+  }
+  .imagen {
+    display: none;
+  }
+  .imagenes .logo {
+    display: none;
+  }
+  .imagenes {
+    justify-content: space-around;
+    padding: 0%;
+  }
+  .imagenes h1 {
+    font-size: 120%;
+  }
+  .imagenes button {
+    font-size: 80%;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 90%;
+  }
+  nav ul li {
+    margin: 1% 0%;
+    width: 100%;
+  }
+  nav button {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    border: none;
+    font-weight: 700;
+    color: rgba(24, 180, 76, 0.863);
+    font-size: 120%;
+  }
+  #separador {
+    display: block;
+  }
+  .menuAbierto {
+    display: block;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer div {
+    margin: 3% 0%;
+  }
+}

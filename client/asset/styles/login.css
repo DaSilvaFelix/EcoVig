@@ -1,0 +1,152 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  height: 100vh;
+  width: 100%;
+}
+.silaba1 {
+  color: rgba(32, 243, 102, 0.863);
+  margin-left: 10%;
+}
+.silaba2 {
+  color: rgb(106, 218, 247);
+}
+header span {
+  font-family: "Poppins", sans-serif;
+  font-size: 140%;
+  font-weight: 900;
+}
+header {
+  background-color: aliceblue;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+main {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border-radius: 25px;
+  border: 1px solid black;
+  background-color: aliceblue;
+}
+input {
+  color: black;
+  padding: 0% 2%;
+  border: none;
+  border-bottom: 1.5px solid black;
+  background-color: aliceblue;
+  font-size: 120%;
+}
+input::placeholder {
+  font-size: 110%;
+  color: black;
+}
+.botones {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+}
+.botones a {
+  font-size: 110%;
+  text-decoration: none;
+  color: black;
+}
+.botones a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+.botones button {
+  padding: 2.5%;
+  border-radius: 10px;
+  background-color: rgba(32, 243, 102, 0.863);
+  border: none;
+  font-size: 110%;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: black;
+  padding: 10%;
+}
+footer ul li {
+  color: aliceblue;
+}
+form {
+  min-width: 300px;
+  width: 50%;
+  height: 70%;
+}
+input {
+  min-width: 250px;
+  width: 70%;
+  margin-bottom: 8%;
+  height: 15%;
+}
+@media (max-width: 575px) {
+  form {
+    min-width: 300px;
+    width: 80%;
+    height: 70%;
+  }
+  input {
+    min-width: 250px;
+    width: 70%;
+    margin-bottom: 10%;
+    height: 15%;
+  }
+}
+@media (min-width: 575px) and (max-width: 767px) {
+  form {
+    min-width: 300px;
+    width: 80%;
+    height: 70%;
+  }
+  input {
+    min-width: 250px;
+    width: 70%;
+    margin-bottom: 8%;
+    height: 15%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  form {
+    min-width: 300px;
+    width: 65%;
+    height: 70%;
+  }
+  input {
+    min-width: 250px;
+    width: 70%;
+    margin-bottom: 8%;
+    height: 15%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  form {
+    min-width: 300px;
+    width: 50%;
+    height: 70%;
+  }
+  input {
+    min-width: 250px;
+    width: 70%;
+    margin-bottom: 8%;
+    height: 15%;
+  }
+}
