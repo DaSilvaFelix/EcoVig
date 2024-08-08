@@ -32,11 +32,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (token) {
     iniciar.style.display = "none";
 
-    perfil.innerHTML += `<button id = 'miPerfil'><img
-          src=""
-          alt="perfil"
-          class = 'imgUser'
-          </button>
+    perfil.innerHTML += `<button id = 'miPerfil'>Menu De Usuario</button>
           <div id="carta-opciones" class="abrirCarta">
             <ul id='lista-opciones'>
               <li><a href="">Perfil</a></li>
